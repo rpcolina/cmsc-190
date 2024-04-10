@@ -1,0 +1,105 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{#1}
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{one:ugur2020impacts}
+\BIBentryALTinterwordspacing
+N.~G. Uğur and A.~Akbiyik, ``Impacts of covid-19 on global tourism industry: A
+  cross-regional comparison,'' \emph{Tourism Management Perspectives}, vol.~36,
+  p. 100744, 2020. [Online]. Available:
+  \url{https://doi.org/10.1016/j.tmp.2020.100744}
+\BIBentrySTDinterwordspacing
+
+\bibitem{two:pwc-tourism-covid19}
+\BIBentryALTinterwordspacing
+P.~Philippines. (2020) Tourism industry: Navigating covid-19. [Online].
+  Available:
+  \url{https://www.pwc.com/ph/en/publications/pwc-publications/tourism-covid-19.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{three:rappler-philippines-tourism}
+\BIBentryALTinterwordspacing
+Rappler. (2019) Philippines tourism campaign kicks off in 2012. [Online].
+  Available:
+  \url{https://www.rappler.com/business/478-philippines-tourism-campaign-kicks-off-in-2012/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{four:statista-philippines-tourism}
+\BIBentryALTinterwordspacing
+Statista. (2023) Philippines: Tourism direct gross value added (gva) share of
+  gdp. [Online]. Available:
+  \url{https://www.statista.com/statistics/1094766/philippines-tourism-direct-gross-value-added-share-of-gdp/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{five:mb-enhanced-tourism-slogan}
+\BIBentryALTinterwordspacing
+M.~Bulletin. (2023) Enhanced tourism slogan to be expected soon from dot.
+  [Online]. Available:
+  \url{https://mb.com.ph/2023/5/16/enhanced-tourism-slogan-to-be-expected-soon-from-dot/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{six:alvarez}
+\BIBentryALTinterwordspacing
+M.~A. Alvarez-Carmona, R.~Aranda, A.~Y. Rodriguez-Gonzalez, D.~Fajardo-Delgado,
+  M.~G. Sanchez, H.~Perez-Espinosa, J.~Martinez-Miranda,
+  R.~Guerrero-Rodríguez, L.~Bustio-Martínez, and A.~Díaz-Pacheco, ``Natural
+  language processing applied to tourism research: A systematic review and
+  future research directions,'' \emph{Journal of King Saud University -
+  Computer and Information Sciences}, vol.~34, no. 10, Part B, pp.
+  10\,125--10\,144, 2022. [Online]. Available:
+  \url{https://www.sciencedirect.com/science/article/pii/S1319157822003615}
+\BIBentrySTDinterwordspacing
+
+\bibitem{seven:menchavez}
+\BIBentryALTinterwordspacing
+J.~C.~L. Menchavez and K.~J. Espinosa, ``Fun in the philippines: Automatic
+  identification and sentiment analysis of tourism-related tweets,'' \emph{2015
+  IEEE International Conference on Data Mining Workshop (ICDMW)}, pp. 660--667,
+  2015. [Online]. Available:
+  \url{https://api.semanticscholar.org/CorpusID:2765694}
+\BIBentrySTDinterwordspacing
+
+\bibitem{eight:Sontayasara_2021jdr}
+T.~Sontayasara, S.~Jariyapongpaiboon, A.~Promjun, N.~Seelpipat, K.~Saengtabtim,
+  J.~Tang, and N.~Leelawat, ``Twitter sentiment analysis of bangkok tourism
+  during covid-19 pandemic using support vector machine algorithm,''
+  \emph{Journal of Disaster Research}, vol.~16, no.~1, pp. 24--30, 2021.
+
+\bibitem{nine:RAHMAN2021e06200}
+\BIBentryALTinterwordspacing
+M.~M. Rahman, G.~N. Ali, X.~J. Li, J.~Samuel, K.~C. Paul, P.~H. Chong, and
+  M.~Yakubov, ``Socioeconomic factors analysis for covid-19 us reopening
+  sentiment with twitter and census data,'' \emph{Heliyon}, vol.~7, no.~2, p.
+  e06200, 2021. [Online]. Available:
+  \url{https://www.sciencedirect.com/science/article/pii/S2405844021003054}
+\BIBentrySTDinterwordspacing
+
+\bibitem{ten:analyticsvidhya-naive-bayes}
+\BIBentryALTinterwordspacing
+A.~Vidhya. (2023) Naive bayes explained. [Online]. Available:
+  \url{https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{eleven:geeksforgeeks-rnn-text-classification}
+\BIBentryALTinterwordspacing
+GeeksforGeeks. (2024) Rnn for text classifications in nlp. [Online]. Available:
+  \url{https://www.geeksforgeeks.org/rnn-for-text-classifications-in-nlp/}
+\BIBentrySTDinterwordspacing
+
+\end{thebibliography}

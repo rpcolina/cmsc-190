@@ -1,0 +1,11 @@
+Naciye Güliz Uğur, Adem Akbıyık,
+Impacts of COVID-19 on global tourism industry: A cross-regional comparison,
+Tourism Management Perspectives,
+Volume 36,
+2020,
+100744,
+ISSN 2211-9736,
+https://doi.org/10.1016/j.tmp.2020.100744.
+(https://www.sciencedirect.com/science/article/pii/S2211973620301112)
+Abstract: The tourism industry was one of the world's greatest markets; until the world met a pandemic in the 21st century, COVID-19. This study aims to present the reactions of travelers during the pandemic trends outlined by adopting text mining techniques. Between December 30, 2019–March 15, 2020, approximately 75,000 comments are retrieved from the TripAdvisor forums, and 23,515 cases from the US, Europe, and Asia forums are employed for analyses. The results reveal that the tourism sector is easily affected by global crises. It is almost the same day that travelers decide to cancel or delay their trips, with the spread of the news. More in-depth analyses uncovered several topics consisted of comments on benefiting from travel insurance and refund due to the travel cancellations. Travel insurance has become a hot topic, which may be a way of reanimating the industry by offering travel packages, including travel insurance services.
+Keywords: Coronavirus; COVID-19; Pandemic; Text mining; Wordstat

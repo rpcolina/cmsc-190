@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <base target="_blank">
+  <style>
+:root {
+  --fg: #000; /* foreground  */
+  --bg: #fff; /* background  */
+  --bd: #000; /* border  */
+  --lk: #0095dd; /* link */
+  --hg: #ffff81; /* highlight  */
+}
+html {
+  overflow: overlay;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 30px auto 0 auto;
+  padding: 10px;
+  position: relative;
+
+  color: var(--fg);
+  border-color: var(--bd);
+  background-color: var(--bg);
+}
+body[data-mode="light"] {
+  color-scheme: light;
+  --fg: #222;
+  --bd: #222;
+  --bg: whitesmoke;
+}
+body[data-mode="dark"] {
+  color-scheme: dark;
+  --fg: #eee;
+  --bd: #eee;
+  --bg: #333;
+}
+body[data-mode="sepia"] {
+  color-scheme: light;
+  --fg: #5b4636;
+  --bd: #5b4636;
+  --bg: #f4ecd8;
+}
+body[data-mode="solarized-light"] {
+  color-scheme: light;
+  --fg: #586e75;
+  --bd: #586e75;
+  --bg: #fdf6e3;
+}
+body[data-mode="nord-light"] {
+  color-scheme: light;
+  --fg: #2e3440;
+  --bd: #2e3440;
+  --bg: #e5e9f0;
+}
+body[data-mode="groove-dark"] {
+  color-scheme: dark;
+  --fg: #cec4ac;
+  --bd: #cec4ac;
+  --bg: #282828;
+}
+body[data-mode="solarized-dark"] {
+  color-scheme: dark;
+  --fg: #839496;
+  --bd: #839496;
+  --bg: #002b36;
+}
+body[data-mode="nord-dark"] {
+  color-scheme: dark;
+  --fg: #e5e9f0;
+  --bd: #e5e9f0;
+  --bg: #2e3440;
+}
+
+@media print {
+  body[data-mode] {
+    --fg: #000;
+    --bd: #000;
+    --bg: #fff;
+
+    width: unset;
+    padding: 0;
+    margin: 0;
+  }
+}
+body[data-loaded=true] {
+  
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+img:not([width])[src$=".svg"] {
+  max-width: 100px;
+}
+body[data-images=false] canvas,
+body[data-images=false] svg,
+body[data-images=false] img {
+  display: none;
+}
+svg:not([width]):not([height]) {
+  max-width: 25vmin;
+}
+a {
+  color: var(--lk);
+  text-decoration: none;
+}
+hr {
+  background-color: var(--bd);
+  height: 1px;
+  border: 0;
+}
+#reader-domain {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border-bottom-color: currentcolor;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: inline-block;
+  direction: ltr;
+}
+#reader-domain > span:first-child {
+  font-size: 1.1em;
+}
+#reader-domain > span:last-child {
+  font-size: 0.8em;
+}
+#reader-title {
+  font-size: 1.6em;
+  line-height: 1.25em;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0;
+}
+#reader-credits,
+#doi,
+#published-time,
+#reader-estimated-time {
+  font-size: 0.85em;
+  line-height: 1.48em;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+#reader-credits:not(:empty)::after {
+  content: ' ⋮ ';
+}
+#published-time:not(:empty)::before {
+  content: ' ⋮ ';
+}
+#doi-json {
+  overflow: hidden;
+}
+#doi-json code {
+  overflow: auto;
+  max-height: 400px;
+}
+#published-time:empty,
+#reader-credits:empty {
+  display: none;
+}
+mark.hghlght {
+  background-color: var(--hg);
+}
+body:not([data-columns="1"]) .page :is(h1, h2) {
+  column-span: all;
+  background-color: rgba(125, 125, 125, 0.1);
+  padding: 10px;
+}
+.hidden {
+  display: none;
+}
+
+</style>
+  <style id="user-css">body {
+  padding-bottom: 64px;
+}
+a:visited {
+  color: #d33bf0;
+}
+a:link, a:link:hover, a:link:active, a:link * {
+  color: #0095dd;
+}
+a:link {
+  text-decoration: none;
+  font-weight: normal;
+}
+pre {
+  white-space: pre-wrap;
+}
+pre code {
+  background-color: #eff0f1;
+  color: #393318;
+  font-family: monospace;
+  display: block;
+  padding: 5px 10px;
+}
+body[data-mode="dark"] pre code {
+  background-color: #585858;
+  color: #e8e8e8;
+}
+
+/* CSS for sans-serif fonts */
+body[data-font=sans-serif] {}
+/* CSS for serif fonts */
+body[data-font=serif] {}
+
+/* CSS for "sepia" theme */
+body[data-mode=sepia] {}
+/* CSS for "light" theme */
+body[data-mode=light] {}
+/* CSS for "dark" theme */
+body[data-mode=dark] {}</style>
+<title>Impact of COVID-19 on the Philippine Tourism industry</title><title>Impact of COVID-19 on the Philippine Tourism industry :: Reader View</title></head>
+<body tabindex="1" data-images="true" data-mode="solarized-light" data-font="sans-serif" data-columns="1" data-loaded="true">
+  <span></span> <!-- for IntersectionObserver -->
+  <a id="reader-domain" href="https://www.pwc.com/ph/en/publications/pwc-publications/tourism-covid-19.html">
+    <span>www.pwc.com</span>
+    <span>/ph/en/publications/pwc-publications/tourism-covid-19.html</span>
+  </a>
+  <h1 dir="auto" id="reader-title">Impact of COVID-19 on the Philippine Tourism industry</h1>
+  <span dir="auto" id="reader-credits">PricewaterhouseCoopers</span>
+  <span dir="auto" id="reader-estimated-time">13-16 minutes</span>
+  <span dir="auto" id="published-time"></span>
+  <hr>
+  <div id="readability-page-1" class="page"><div id="container-652e796ab0">
+        
+        
+
+<div id="overview" data-wcmmode="false" data-parallax="true" data-videoparallax="false" data-videoid="videoelement905261f7-277e-b4e8-ac0a-cc84353d2a18" data-videoautoplay="false" data-videoloop="false" tabindex="-1">
+   
+      
+      <div id="container-078850cd69">
+        <h2>Introduction</h2>
+<p>Without a doubt, the tourism industry is among the sectors that have been greatly affected by the COVID-19 pandemic. The closing of borders, airports, and hotels as well as restrictions on mass gatherings, land travel and related services across the world put around 100 to 120 million jobs at risk, as estimated by the World Tourism Organization.</p>
+<p>In the first quarter of 2020, the period when the travel restrictions and lockdowns in most countries started, international tourist arrivals declined by 22% resulting in an estimated loss of US$80bn in global tourism receipts. In such period, 97 destinations have totally or partially closed their borders for tourists, 65 destinations have suspended international flights totally or partially, and 39 destinations were implementing the closing of borders (i.e., banning the arrivals from specific countries).</p>
+
+    </div>
+   
+      
+      <div id="container-bb13a1fd36">
+
+
+    
+
+<p><img alt="" data-emptytext="Image" src="https://www.pwc.com/ph/en/assets/image/2020/ph-tourism-covid-19-logos.jpg">               
+    
+
+</p>
+
+</div>
+   
+</div>
+
+<div id="container-182e05a157">
+        
+        <div id="content-free-1-af66" data-wcmmode="false" data-parallax="true" data-videoparallax="false" data-videoid="videoelementd8060643-f60c-b403-215f-f07772cf4c46" data-videoautoplay="false" data-videoloop="false">
+        <div>
+
+
+    
+
+    <p>
+        </p><h4>International tourist arrivals by region in Q1 2020</h4>
+
+    <p></p>
+
+
+    
+
+
+</div>
+<div>
+
+
+    
+
+<p><img alt="" data-emptytext="Image" src="https://www.pwc.com/ph/en/assets/image/charts/ph-tourism-covid-19-world-map.jpg">               
+    
+
+</p>
+
+</div>
+
+		</div>
+<div id="content-free-1-ee24" data-wcmmode="false" data-parallax="true" data-videoparallax="false" data-videoid="videoelement67b8e0f7-c596-9f8f-eb60-6258ee702bfc" data-videoautoplay="false" data-videoloop="false">
+   
+      
+      <div id="container-24888ae82f">
+        <p>In the Philippines, the government closed the airports in Luzon on 20 March as part of the Enhanced Community Quarantine (ECQ) that started in the island on 16 March.&nbsp;The tourism sector has already felt the negative impact of the pandemic on its performance much earlier. In other countries, travel restrictions and measures have started as early as January of this year, and have impacted the Philippine international tourist arrivals. Domestic tourists, on the other hand, also limited their travel for fear of contracting COVID-19. The Department of Tourism reported that international tourist receipts in the first quarter of the year declined to PHP85bn, 36% lower than the revenues in the same period last year.</p>
+<p>To understand the impact of COVID-19 on the Philippine tourism industry, PwC Philippines, together with the Department of Tourism, surveyed 247 decision makers across the different subsectors in May 2020.</p>
+
+    </div>
+   
+      
+      <div id="container-2f16d3c2de">
+
+
+    
+
+<p><img alt="" data-emptytext="Image" src="https://www.pwc.com/ph/en/assets/image/charts/ph-tourism-covid-19-impact-2.jpg">               
+    
+
+</p>
+
+</div>
+   
+</div>
+<div id="content-free-1-d202" data-wcmmode="false" data-parallax="true" data-videoparallax="false" data-videoid="videoelement30c0eff6-9b8d-bb23-42e2-41e90f642e31" data-videoautoplay="false" data-videoloop="false">
+        <div>
+   
+      
+      <div id="container-f8acf63e48">
+
+
+    
+
+    <p>Forty-four percent of the respondents are from the tourism services sector (i.e., travel agencies, bookings, tours, etc.), and 34% are from the accommodations sector. According to the survey, 97% say that COVID-19 has the potential for significant impact on their business operations, and is causing them great concern. Such finding is not surprising given that only businesses related to essential services and products were the only enterprises allowed to operate during the ECQ. Because of the low demand and restrictions, majority of the respondents say that they temporarily stopped offering a service/product, reduced their level of operations, and reduced the employee headcount.</p>
+
+
+    
+
+
+</div>
+   
+      
+      <div id="container-464fdffc9e">
+        
+        <div>
+
+
+    
+
+    <p>
+        </p><h4>Over 70% of the respondents belong to the tourism services and accommodations subsectors</h4>
+
+    <p></p>
+
+
+    
+
+
+</div>
+<div>
+
+
+    
+
+<p><img alt="" data-emptytext="Image" src="https://www.pwc.com/ph/en/assets/image/charts/ph-tourism-covid-19-other-respondents.jpg">               
+    
+
+</p>
+
+</div>
+
+        
+    </div>
+   
+</div>
+<div>
+
+
+    
+
+    <p>
+        </p><h6>Tourism-related businesses have opted to temporarily stop offering their products/services during the ECQ, either due to restrictions or low demand</h6>
+
+    <p></p>
+
+
+    
+
+
+</div>
+
+		</div>
+<div id="impact" data-wcmmode="false" data-parallax="true" data-videoparallax="false" data-videoid="videoelementb9061da8-406e-e59a-0a4b-ad0a53f7e238" data-videoautoplay="false" data-videoloop="false" tabindex="-1">
+        <div>
+   
+      
+      <div id="container-e83a5d911c">
+        <h2>Impact of COVID-19 outbreak on the Philippine Tourism industry</h2>
+<p>Given the travel restrictions and closure of businesses, 88% of the respondents expect losses of over 50% of their 2020 revenues. Sixty-three percent of the respondents also say that they expect their businesses to normalize within six months to over a year. Such findings are worrying because the tourism industry contributed 12.7% of the country’s GDP in 2019, and provided 5.71 million jobs in the same year.</p>
+<p>Globally, the World Travel and Tourism council estimated that it could take up to ten months for the industry to recover.</p>
+<p>Nine months since the virus was first detected in China, there is still no sign that the spread is slowing down. The road to recovery can take longer than initially anticipated. Fitch forecasts that tourist arrivals and tourism receipts will not go back to pre-COVID levels even five years hence.</p>
+
+    </div>
+   
+      
+      <div id="container-ed0a108fa7">
+
+
+    
+
+<p><img alt="tourism covid 01" data-emptytext="Image" src="https://www.pwc.com/ph/en/assets/image/charts/ph-tourism-covid-19-losses-2.jpg">
+              
+                        
+    
+
+</p>
+
+</div>
+   
+</div>
+<div>
+
+
+    
+
+<p><img alt="tourism covid 02" data-emptytext="Image" src="https://www.pwc.com/ph/en/assets/image/charts/ph-tourism-covid-19-productivity.jpg">
+              
+                        
+    
+
+</p>
+
+</div>
+
+		</div>
+<div id="tourist-arrivals" data-wcmmode="false" data-parallax="true" data-videoparallax="false" data-videoid="videoelemented7a9ae3-d098-329a-76dd-ef70c7e4025c" data-videoautoplay="false" data-videoloop="false">
+        <div>
+
+
+    
+
+    <p>The country had a stellar performance in 2019 with&nbsp;8.3 million tourist arrivals and PHP550.2bn in international tourism receipts. Latest estimates show that 2020 tourist arrivals and international tourism receipts will go down to 3.9 million and PHP279.5bn, respectively.</p>
+
+
+    
+
+
+</div>
+<div>
+
+
+    
+
+<p><img alt="" data-emptytext="Image" src="https://www.pwc.com/ph/en/assets/image/charts/ph-tourism-covid-19-tourist.jpg">               
+    
+
+</p>
+<p>Note: f - forecast
+
+Source: Fitch</p>
+</div>
+
+		</div>
+<div id="recovering-from-the-pandemic" data-wcmmode="false" data-parallax="true" data-videoparallax="false" data-videoid="videoelement1ad92449-7291-bb6d-ed42-2d334b4d5bb2" data-videoautoplay="false" data-videoloop="false" tabindex="-1">
+        <div>
+   
+      
+      <div id="container-fd9bdffded">
+        <h2>Recovering from the pandemic</h2>
+<p>To help recover from the pandemic, 78% of the respondents say that they need up to PHP5m in additional funding to help normalize their operations. Majority say that they need such funds for working capital requirements, marketing fund to rebuild their brands, and refinancing.</p>
+<p>With 91% of the respondents coming from the micro, small, and medium enterprises (MSMEs), it’s not surprising that 73% are planning to avail of government grants and subsidies to help revive their operations.&nbsp;</p>
+
+    </div>
+   
+      
+      <div id="container-e9f039303d">
+        
+        <div>
+
+
+    
+
+    <p>
+        </p><h4>Many businesses are banking on government subsidies and grants as additional funding</h4>
+
+    <p></p>
+
+
+    
+
+
+</div>
+<div>
+
+
+    
+
+    <p>
+        </p><h6>Sources of funds to be obtained in the next 3 to 6 months</h6>
+
+    <p></p>
+
+
+    
+
+
+</div>
+<div>
+
+
+    
+
+<p><img alt="" data-emptytext="Image" src="https://www.pwc.com/ph/en/assets/image/charts/ph-tourism-covid-19-fund-source.jpg">               
+    
+
+</p>
+
+</div>
+
+        
+    </div>
+   
+</div>
+<div>
+
+
+    
+
+    <p>
+        </p><h4>Most businesses need funding to normalize their operations. It will be mainly used for working capital, and marketing and promotions.&nbsp;</h4>
+
+    <p></p>
+
+
+    
+
+
+</div>
+<div>
+   
+      
+      <div id="container-745a824368">
+        
+        <div>
+
+
+    
+
+    <p>
+        </p><h6>Around 78% need up to PHP5m in additional funding to normalize their operations after ECQ</h6>
+
+    <p></p>
+
+
+    
+
+
+</div>
+<div>
+
+
+    
+
+<p><img alt="" width="800" height="146.625%" data-emptytext="Image" src="https://www.pwc.com/ph/en/assets/image/charts/ph-tourism-covid-19-funding_b.jpg">               
+    
+
+</p>
+
+</div>
+
+        
+    </div>
+   
+      
+      <div id="container-16109edef7">
+
+
+    
+
+    <p>
+        </p><h6>Over 50% of the respondents plan to use their new funding to support working capital requirements, and rebuild their brand</h6>
+
+    <p></p>
+
+
+    
+
+
+</div>
+   
+</div>
+
+		</div>
+<div id="mitigating-the-impact-of-covid-19" data-wcmmode="false" data-parallax="true" data-videoparallax="false" data-videoid="videoelementdcdfdd19-0f6b-d08e-a112-4c0dbe571218" data-videoautoplay="false" data-videoloop="false" tabindex="-1">
+   
+      
+      <div id="container-955088ae1e">
+        <h2>Mitigating the impact of COVID-19</h2>
+<p>To help businesses and individuals mitigate the impact of COVID-19, the country’s House of Representatives approved House Bill 6815 or the proposed Philippine Economic Stimulus Act (PESA) in June 2020. Once passed into law, an economic stimulus package amounting to PHP1.3 trillion will be provided in the next four years to fund the COVID-19 testing, wage subsidies, and assistance to MSMEs. Under the bill, PHP58bn will be appropriated to DOT-accredited tourism enterprises for the following programs:</p>
+<ol>
+<li>Interest-free loans or issuance of loan guarantees with terms of up to five (5) years for maintenance and operating expenses</li>
+<li>Credit facilities for upgrading, rehabilitation, or modernization of current establishments or facilities to be compliant with new health and safety standards</li>
+<li>Marketing and product development promotions and programs</li>
+<li>Grants for education training, and advising of tourism stakeholders for new normal alternative livelihood programs</li>
+<li>Utilization of information technology</li>
+<li>Other relevant programs, including infrastructure to mitigate the economic effects of COVID-19 on the tourism industry</li>
+</ol>
+
+    </div>
+   
+      
+      <div id="container-0bc16e3568">
+
+
+    
+
+<p><img alt="" data-emptytext="Image" src="https://www.pwc.com/gx/en/brand-simplified/teaser-images-670/governance/damil-gettyimages-922709706-670.jpg">               
+    
+
+</p>
+
+</div>
+   
+</div>
+<div id="absence-of-revenues" data-wcmmode="false" data-parallax="true" data-videoparallax="false" data-videoid="videoelementa72dd01c-7b70-89f9-f849-128596aeac04" data-videoautoplay="false" data-videoloop="false">
+        <div>
+   
+      
+      <div id="container-ba0221d9f7">
+        <h2>Restarting the tourism sector</h2>
+<p>With the absence of revenues, majority of the respondents say that they can only sustain their operations for up to six months. Similarly, most of the respondents have a cash runway of up to six months.</p>
+<p>How to restart the tourism sector after COVID-19 is one of the top questions leaders across the world are asking. In fact, 79% of the survey respondents say that they expect international tourist arrivals to decline by over 50% in 2020. A respondent shares, “I hope that the government and the Department of Tourism will be able to come up with a clear bounce back program immediately so the stakeholders may be able to make business decisions.”&nbsp;</p>
+
+    </div>
+   
+      
+      <div id="container-beb7fcf0e8">
+
+
+    
+
+<p><img alt="" data-emptytext="Image" src="https://www.pwc.com/gx/en/brand-simplified/teaser-images-670/aerospace/damil_106344-670.jpg">               
+    
+
+</p>
+
+</div>
+   
+</div>
+<div>
+
+
+    
+
+    <p>
+        </p><h4>Government assistance is needed to help businesses survive the impact of the pandemic</h4>
+
+    <p></p>
+
+
+    
+
+
+</div>
+<div>
+   
+      
+      <div id="container-5e17f20eb7">
+
+
+    
+
+    <p>
+        </p><h6>Many tourism-related businesses can sustain their operations and cash up to 6 months only.</h6>
+
+    <p></p>
+
+
+    
+
+
+</div>
+   
+      
+      <div id="container-cac260cd69">
+        
+        <div>
+
+
+    
+
+    <p>
+        </p><h6>How the government can help tourism-related businesses</h6>
+
+    <p></p>
+
+
+    
+
+
+</div>
+<div>
+
+
+    
+
+<p><img alt="" data-emptytext="Image" src="https://www.pwc.com/ph/en/assets/image/charts/ph-tourism-covid-19-tourism-related.jpg">               
+    
+
+</p>
+
+</div>
+
+        
+    </div>
+   
+</div>
+
+		</div>
+<div id="financial-assistance" data-wcmmode="false" data-parallax="true" data-videoparallax="false" data-videoid="videoelemente097ce5c-50fc-0e66-86d5-66dacbdcab31" data-videoautoplay="false" data-videoloop="false" tabindex="-1">
+        <div>
+   
+      
+      <div id="container-ce4d6e9574">
+        
+        <div>
+
+
+    
+
+    <p>While the government is currently reviewing the possible financial assistance that may be provided to the tourism players. According to our respondents, access to customers, reasonably-priced consultants, and suppliers as among their top needs to have sustainable businesses after the ECQ.</p>
+
+
+    
+
+
+</div>
+<div>
+        <p>In other countries, some of the initiatives to help restart tourism are as follows:</p>
+<p><strong>Singapore</strong></p>
+<ul>
+<li>Funding to engage customers and maintain mindshare.&nbsp;</li>
+<li>The Singapore Tourism Board (STB) has launched a US$20m Marketing Partnership Programme.&nbsp;</li>
+<li>STB has also launched the SG Stories Content Fund of US$2m</li>
+<li>Online training to upskill workers</li>
+<li>Tools to accelerate digital transformation</li>
+</ul>
+<p><strong>Japan</strong></p>
+<ul>
+<li>Go To Campaign - the government will subsidize half of domestic travel costs of up to ¥20,000 per night and issue coupons that can be used at souvenir shops and elsewhere</li>
+<li>Creating attractive stay content for diversifying customers, etc.</li>
+<li>For Japanese consumers who purchased domestic travel products during the period via travel agents etc., coupons equivalent to 1/2 of the price (including accommodation discounts, coupons, and usage coupons for local products, restaurants, facilities, etc.) are given</li>
+</ul>
+<p><strong>Thailand</strong></p>
+<ul>
+<li>Project to develop the capacity of entrepreneurs and personnel in tourism to improve the quality of service and build confidence for tourists</li>
+<li>CCTV installation in important tourist attractions to maintain the safety of tourists in Chiang Mai, Surat Thani, Krabi, Chonburi and Phuket provinces</li>
+<li>Project to promote and upgrade tourism operators to Thai tourism standards</li>
+<li>Project to promote the development of accommodation for tourism in the community</li>
+</ul>
+
+    </div>
+
+        
+    </div>
+   
+      
+      <div id="container-c869e1f795">
+
+
+    
+
+<p><img alt="" data-emptytext="Image" src="https://www.pwc.com/gx/en/brand-simplified/teaser-images-670/financial-services/damil-gettyimages-872019702-670.jpg">               
+    
+
+</p>
+
+</div>
+   
+</div>
+<div>
+
+
+    
+
+    <p>
+        </p><h4>The industry expects a significant decline in international tourist arrivals, and almost all consider insuring their businesses for pandemics</h4>
+
+    <p></p>
+
+
+    
+
+
+</div>
+
+<div>
+   
+      
+      <div id="container-e030248569">
+        
+        <div>
+
+
+    
+
+    <p>
+        </p><h6>International tourist arrivals are expected to dramatically decline in 2020.</h6>
+
+    <p></p>
+
+
+    
+
+
+</div>
+<div>
+
+
+    
+
+<p><img alt="" data-emptytext="Image" src="https://www.pwc.com/ph/en/assets/image/charts/ph-tourism-covid-19-decline.jpg">               
+    
+
+</p>
+
+</div>
+
+        
+    </div>
+   
+      
+      <div id="container-12ba7cfea8">
+        
+        <div>
+
+
+    
+
+    <p>
+        </p><h6>Including pandemics as part of insurance coverage</h6>
+
+    <p></p>
+
+
+    
+
+
+</div>
+<div>
+
+
+    
+
+<p><img alt="" data-emptytext="Image" src="https://www.pwc.com/ph/en/assets/image/charts/ph-tourism-covid-19-92.jpg">               
+    
+
+</p>
+
+</div>
+<div>
+
+
+    
+
+    <p>of respondents say pandemics should be included in the coverage</p>
+
+
+    
+
+
+</div>
+
+        
+    </div>
+   
+      
+      <div id="container-6607f3e3e3">
+        
+        <div>
+
+
+    
+
+    <p>
+        </p><h6>Insuring businesses for any eventualities/crisis that may arise</h6>
+
+    <p></p>
+
+
+    
+
+
+</div>
+<div>
+
+
+    
+
+<p><img alt="" data-emptytext="Image" src="https://www.pwc.com/ph/en/assets/image/charts/ph-tourism-covid-19-90.jpg">               
+    
+
+</p>
+
+</div>
+<div>
+
+
+    
+
+    <p>of respondents consider insuring their businesses for crises events such as COVID-19 pandemic</p>
+
+
+    
+
+
+</div>
+
+        
+    </div>
+   
+</div>
+
+		</div>
+<div id="beautiful-islands" data-wcmmode="false" data-parallax="true" data-videoparallax="false" data-videoid="videoelemente97d44c2-ecac-cf7b-c27e-aad2fd9a5249" data-videoautoplay="false" data-videoloop="false" tabindex="-1">
+        <div>
+   
+      
+      <div id="container-8c5a4f6819">
+        <h2>Getting back in flight</h2>
+<p>The Philippines has beautiful islands that will once again attract the tourists after the pandemic. Nevertheless, the country should take this opportunity to rebuild the sector by helping the players upskill and digitalize, rethink the way they do business, and ensure compliance with safety and health standards. Promoting medical tourism and agri-tourism may be among the programs that the country can prioritize to help restart the sector.</p>
+<p>While the Philippines is experiencing difficulties at this time, Filipinos should remember that through combined efforts and hard work in the past, the country was able to grow the tourism sector, and made it one of the top GDP contributors. With the country’s renewed commitment, Filipinos can be confident that that the tourism industry will achieve better success after this pandemic.</p>
+
+    </div>
+   
+      
+      <div id="container-bd48d3b0bd">
+
+
+    
+
+<p><img alt="" data-emptytext="Image" src="https://www.pwc.com/gx/en/brand-simplified/teaser-images-670/aerospace/damil-gettyimages-72664757-670.jpg">               
+    
+
+</p>
+
+</div>
+   
+</div>
+<div>
+
+
+    
+
+    <p>
+        </p><h5>While tax incentives and removing barriers to financing are relevant, access to customers is the top need of the industry players</h5>
+
+    <p></p>
+
+
+    
+
+
+</div>
+<div>
+   
+      
+      <div id="container-a2c571bfb8">
+
+
+    
+
+    <p>
+        </p><h6>Apart from financing, majority consider access to customers as a vital component in keeping a sustainable business after the ECQ</h6>
+
+    <p></p>
+
+
+    
+
+
+</div>
+   
+      
+      <div id="container-67c329ae41">
+        
+        <div>
+
+
+    
+
+    <p>
+        </p><h6>Top government interventions the businesses wish to receive</h6>
+
+    <p></p>
+
+
+    
+
+
+</div>
+<div>
+        <ol>
+<li>Tax incentivized business</li>
+<li>Removing barriers to accessing financial support</li>
+<li>Loan grants</li>
+<li>Generate a platform for the promotion of MSMEs</li>
+<li>Loan guarantee scheme that creates modest value</li>
+<li>Provide a program for entrepreneurs to take up service oriented activities</li>
+<li>Create a program for startups</li>
+<li>Capacity building seminar</li>
+</ol>
+
+    </div>
+
+        
+    </div>
+   
+</div>
+
+		</div>
+
+        
+    </div>
+
+<div id="link-to-services" data-wcmmode="false" data-parallax="true" data-videoparallax="false" data-videoid="videoelement4e3aaec5-61be-a604-23ba-6ec1a7e7e370" data-videoautoplay="false" data-videoloop="false">
+				<h2>Explore</h2>
+				 
+				
+					
+					
+				
+			</div>
+
+
+
+
+
+        
+    </div></div>
+  <span></span> <!-- for IntersectionObserver -->
+  
+  
+  
+  
+
+
+<style id="note-styling">
+    .note {
+      position: absolute;
+      z-index: 10;
+      border: none;
+      outline: none;
+      font-family: inherit;
+      font-size: inherit;
+      padding: 5px;
+      min-width: 32px;
+      min-height: 32px;
+    }
+    .note:focus {
+      z-index: 11;
+    }
+    .note[type="0"] {
+      background-color: #fff740;
+      color: #2c2c2d;
+    }
+    .note[type="0"]::placeholder {
+      color: #868226;
+    }
+    .note[type="1"] {
+      background-color: #feff9c;
+      color: #2c2c2d;
+    }
+    .note[type="1"]::placeholder {
+      color: #6d6d3d;
+    }
+    .note[type="2"] {
+      background-color: #ff65a3;
+      color: #2c2c2d;
+    }
+    .note[type="2"]::placeholder {
+      color: #65263f;
+    }
+    .note[type="3"] {
+      background-color: #ff7eb9;
+      color: #2c2c2d;
+    }
+    .note[type="3"]::placeholder {
+      color: #562b3f;
+    }
+    .note[type="4"] {
+      background-color: #7afcff;
+      color: #295c5d;
+    }
+    .note[type="4"]::placeholder {
+      color: #377677;
+    }</style></body><style>body {
+      font-size:  15px;
+      font-family: Helvetica, Arial, sans-serif;
+      width: 600px;
+    }
+    p {
+      text-align: justify
+    }
+    .page {
+      line-height: 22.5px;
+      column-count: unset;
+    }
+    h1, h2, h3 {
+      line-height: initial;
+    }</style></html>
